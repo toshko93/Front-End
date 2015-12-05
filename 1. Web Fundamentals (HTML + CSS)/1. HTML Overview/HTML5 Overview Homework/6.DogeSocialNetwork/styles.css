@@ -1,0 +1,12 @@
+body{
+    background-color: #add8e6;
+}
+h2 {
+    border-bottom: solid #a0b8bf;
+    border-top: solid #a0b8bf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+dt {
+    font-style: italic;
+}

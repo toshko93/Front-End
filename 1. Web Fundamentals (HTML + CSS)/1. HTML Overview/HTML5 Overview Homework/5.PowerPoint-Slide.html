@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html {
+            font-family: calibri;
+        }
+        div.container{
+            width: 640px;
+            height: 420px;
+            background: url("SoftUni Backgroubd changed.jpg");
+        }
+        div.nested {
+            background-color: rgba(58,58,58,0.60);
+            border-style: solid;
+            border-width: 1px;
+            border-color: #a6a6a6;
+            padding: 5px;
+            margin: 8px;
+            margin-right: 70px;
+            margin-left: 20px;
+        }
+        li {
+            font-size: 26px;
+            color: white;
+
+        }
+        ul {
+            list-style: square;
+        }
+        h1 {
+            padding-top: 10px;
+            margin: 18px;
+            color: #f3be60;
+        }
+        b {
+            color: #fbeec9;
+        }
+        b.bolded {
+            color: #f3be60;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Headings and Paragraphs</h1>
+    <ul>
+        <li>Heading Tags: <b class="bolded">&#60;h1&#62;</b> - <b class="bolded">&#60;h6&#62</b>;</li>
+            <div class="nested"><b>&#60;h1&#62;Heading 1&#60;/h1&#62;<br>
+            &#60;h2&#62;Sub heading 1&#60;/h2&#62;<br>
+            &#60;h3&#62;Sub heading 2&#60;/h3&#62;</b></div>
+
+        <li>Paragraph Tags: <b class="bolded">&#60;p&#62;</b></li>
+            <div class="nested"><b>&#60;p&#62;This is my first paragraph&#60;/p&#62;<br>
+            &#60;p&#62;This is my second paragraph&#60;/p&#62;</b></div>
+
+        <li>Sections: <b class="bolded">&#60;div&#62;</b> and <b class="bolded">&#60;span&#62;</b></li>
+            <div class="nested"><b>&#60;div style="background: skyblue;"&#62;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a div<br>
+                &#60;/div&#62;</b></div>
+    </ul>
+    </div>
+</body>
+</html>

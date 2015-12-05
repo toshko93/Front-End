@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Lists</title>
+    <style>
+        #container {
+            font-family: sans-serif;
+        }
+        #unordered-list-nested {
+            list-style-type: square;
+        }
+        #unordered-list-parrent {
+            list-style-type: circle;
+        }
+        #main-list > li {
+            padding: 3px;
+        }
+        #main-list > li > ol > li{
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Preceding Text</p>
+        <ol id="main-list" type="I">
+            <li>List Item 1
+                <ol>
+                    <li>Nested Item 1.1</li>
+                    <li>Nested Item 1.2</li>
+                </ol>
+            </li>
+            <li>List Item 2
+                <ol type="1">
+                    <li>Nested Item 2.1</li>
+                    <li>Nested Item 2.2
+                        <ul id="unordered-list-parrent">
+                            <li>Nested Item 2.2.1</li>
+                            <li>Nested Item 2.2.2
+                                <ul id="unordered-list-nested">
+                                    <li>Nested Item 2.2.2.1</li>
+                                    <li>Nested Item 2.2.2.2</li>
+                                </ul>
+                            </li>
+                            <li>Nested Item 2.2.3</li>
+                        </ul>
+                    </li>
+                    <li>Nested Item 2.3</li>
+                </ol>
+            </li>
+            <li>List Item 3
+                <ul style="list-style-type: disc">
+                    <li>Nested Item 3.1</li>
+                    <li>Nested Item 3.2</li>
+                    <li>Nested Item 3.3</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
